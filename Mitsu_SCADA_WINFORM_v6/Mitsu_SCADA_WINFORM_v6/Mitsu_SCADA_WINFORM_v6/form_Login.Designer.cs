@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnLogin = new System.Windows.Forms.Button();
-            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.tbxPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_Username = new System.Windows.Forms.TextBox();
+            this.tbxUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,13 +51,14 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txt_Password
+            // tbxPassword
             // 
-            this.txt_Password.Location = new System.Drawing.Point(41, 166);
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.PasswordChar = '*';
-            this.txt_Password.Size = new System.Drawing.Size(211, 22);
-            this.txt_Password.TabIndex = 10;
+            this.tbxPassword.Location = new System.Drawing.Point(41, 166);
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '*';
+            this.tbxPassword.Size = new System.Drawing.Size(211, 22);
+            this.tbxPassword.TabIndex = 10;
+            this.tbxPassword.Text = "123456";
             // 
             // label3
             // 
@@ -69,12 +70,13 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Password:";
             // 
-            // txt_Username
+            // tbxUsername
             // 
-            this.txt_Username.Location = new System.Drawing.Point(41, 101);
-            this.txt_Username.Name = "txt_Username";
-            this.txt_Username.Size = new System.Drawing.Size(211, 22);
-            this.txt_Username.TabIndex = 8;
+            this.tbxUsername.Location = new System.Drawing.Point(41, 101);
+            this.tbxUsername.Name = "tbxUsername";
+            this.tbxUsername.Size = new System.Drawing.Size(211, 22);
+            this.tbxUsername.TabIndex = 8;
+            this.tbxUsername.Text = "admin";
             // 
             // label2
             // 
@@ -93,7 +95,7 @@
             this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(48, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 38);
+            this.label1.Size = new System.Drawing.Size(187, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "Login Form";
             // 
@@ -128,9 +130,9 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_Username);
+            this.Controls.Add(this.tbxUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -145,9 +147,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_Username;
+        private System.Windows.Forms.TextBox tbxUsername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;

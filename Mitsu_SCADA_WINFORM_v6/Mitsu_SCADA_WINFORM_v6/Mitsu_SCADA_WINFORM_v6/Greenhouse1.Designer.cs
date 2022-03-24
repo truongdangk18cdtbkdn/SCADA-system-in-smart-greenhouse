@@ -125,6 +125,10 @@
             this.btnEditMoisture = new System.Windows.Forms.Button();
             this.pipe2 = new SymbolFactoryDotNet.StandardControl();
             this.pipe1 = new SymbolFactoryDotNet.StandardControl();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel1.SuspendLayout();
@@ -193,15 +197,15 @@
             // tbxMoisture
             // 
             this.tbxMoisture.Enabled = false;
-            this.tbxMoisture.Location = new System.Drawing.Point(899, 330);
+            this.tbxMoisture.Location = new System.Drawing.Point(925, 330);
             this.tbxMoisture.Name = "tbxMoisture";
-            this.tbxMoisture.Size = new System.Drawing.Size(79, 24);
+            this.tbxMoisture.Size = new System.Drawing.Size(53, 24);
             this.tbxMoisture.TabIndex = 87;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(835, 330);
+            this.pictureBox6.Location = new System.Drawing.Point(803, 330);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(60, 60);
             this.pictureBox6.TabIndex = 86;
@@ -223,7 +227,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(699, 330);
+            this.label26.Location = new System.Drawing.Point(733, 330);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(37, 24);
             this.label26.TabIndex = 84;
@@ -232,9 +236,9 @@
             // tbxTemperature
             // 
             this.tbxTemperature.Enabled = false;
-            this.tbxTemperature.Location = new System.Drawing.Point(621, 330);
+            this.tbxTemperature.Location = new System.Drawing.Point(677, 330);
             this.tbxTemperature.Name = "tbxTemperature";
-            this.tbxTemperature.Size = new System.Drawing.Size(79, 24);
+            this.tbxTemperature.Size = new System.Drawing.Size(49, 24);
             this.tbxTemperature.TabIndex = 83;
             this.tbxTemperature.TextChanged += new System.EventHandler(this.tbxTemperature_TextChanged);
             // 
@@ -307,7 +311,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(1252, 41);
+            this.label20.Location = new System.Drawing.Point(1240, 41);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(168, 24);
             this.label20.TabIndex = 76;
@@ -1527,9 +1531,9 @@
             // tbxSetTemperature
             // 
             this.tbxSetTemperature.Enabled = false;
-            this.tbxSetTemperature.Location = new System.Drawing.Point(621, 363);
+            this.tbxSetTemperature.Location = new System.Drawing.Point(677, 363);
             this.tbxSetTemperature.Name = "tbxSetTemperature";
-            this.tbxSetTemperature.Size = new System.Drawing.Size(79, 24);
+            this.tbxSetTemperature.Size = new System.Drawing.Size(49, 24);
             this.tbxSetTemperature.TabIndex = 129;
             // 
             // label3
@@ -1537,7 +1541,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(699, 363);
+            this.label3.Location = new System.Drawing.Point(733, 363);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 24);
             this.label3.TabIndex = 130;
@@ -1546,9 +1550,9 @@
             // tbxSetMoisture
             // 
             this.tbxSetMoisture.Enabled = false;
-            this.tbxSetMoisture.Location = new System.Drawing.Point(899, 363);
+            this.tbxSetMoisture.Location = new System.Drawing.Point(925, 363);
             this.tbxSetMoisture.Name = "tbxSetMoisture";
-            this.tbxSetMoisture.Size = new System.Drawing.Size(79, 24);
+            this.tbxSetMoisture.Size = new System.Drawing.Size(53, 24);
             this.tbxSetMoisture.TabIndex = 131;
             // 
             // label5
@@ -1565,17 +1569,20 @@
             // btnSaveTemp
             // 
             this.btnSaveTemp.BackColor = System.Drawing.Color.DarkGray;
+            this.btnSaveTemp.Enabled = false;
             this.btnSaveTemp.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveTemp.Location = new System.Drawing.Point(586, 396);
+            this.btnSaveTemp.Location = new System.Drawing.Point(612, 396);
             this.btnSaveTemp.Name = "btnSaveTemp";
             this.btnSaveTemp.Size = new System.Drawing.Size(49, 28);
             this.btnSaveTemp.TabIndex = 133;
             this.btnSaveTemp.Text = "Save";
             this.btnSaveTemp.UseVisualStyleBackColor = false;
+            this.btnSaveTemp.Click += new System.EventHandler(this.btnSaveTemp_Click);
             // 
             // btnSaveMoisture
             // 
             this.btnSaveMoisture.BackColor = System.Drawing.Color.DarkGray;
+            this.btnSaveMoisture.Enabled = false;
             this.btnSaveMoisture.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveMoisture.Location = new System.Drawing.Point(861, 396);
             this.btnSaveMoisture.Name = "btnSaveMoisture";
@@ -1583,17 +1590,19 @@
             this.btnSaveMoisture.TabIndex = 134;
             this.btnSaveMoisture.Text = "Save";
             this.btnSaveMoisture.UseVisualStyleBackColor = false;
+            this.btnSaveMoisture.Click += new System.EventHandler(this.btnSaveMoisture_Click);
             // 
             // btnEditTemp
             // 
             this.btnEditTemp.BackColor = System.Drawing.Color.DarkGray;
             this.btnEditTemp.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditTemp.Location = new System.Drawing.Point(641, 396);
+            this.btnEditTemp.Location = new System.Drawing.Point(667, 396);
             this.btnEditTemp.Name = "btnEditTemp";
             this.btnEditTemp.Size = new System.Drawing.Size(59, 28);
             this.btnEditTemp.TabIndex = 135;
             this.btnEditTemp.Text = "Edit";
             this.btnEditTemp.UseVisualStyleBackColor = false;
+            this.btnEditTemp.Click += new System.EventHandler(this.btnEditTemp_Click);
             // 
             // btnEditMoisture
             // 
@@ -1605,6 +1614,7 @@
             this.btnEditMoisture.TabIndex = 136;
             this.btnEditMoisture.Text = "Edit";
             this.btnEditMoisture.UseVisualStyleBackColor = false;
+            this.btnEditMoisture.Click += new System.EventHandler(this.btnEditMoisture_Click);
             // 
             // pipe2
             // 
@@ -1639,12 +1649,56 @@
             this.pipe1.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("pipe1.DebugData"));
             this.pipe1.FillColor = System.Drawing.Color.Blue;
             this.pipe1.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Shaded;
-            this.pipe1.Location = new System.Drawing.Point(64, 513);
+            this.pipe1.Location = new System.Drawing.Point(65, 513);
             this.pipe1.Name = "pipe1";
             this.pipe1.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
             this.pipe1.Size = new System.Drawing.Size(34, 31);
             this.pipe1.SymbolHandle = ((long)(630871749));
             this.pipe1.TabIndex = 138;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(617, 330);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 24);
+            this.label9.TabIndex = 139;
+            this.label9.Text = "Actual";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(617, 363);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 24);
+            this.label11.TabIndex = 140;
+            this.label11.Text = "Set";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(862, 330);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(62, 24);
+            this.label14.TabIndex = 141;
+            this.label14.Text = "Actual";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(862, 363);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(37, 24);
+            this.label30.TabIndex = 142;
+            this.label30.Text = "Set";
             // 
             // Greenhouse1
             // 
@@ -1652,6 +1706,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1598, 852);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pipe1);
             this.Controls.Add(this.pipe2);
             this.Controls.Add(this.btnEditMoisture);
@@ -1884,5 +1942,9 @@
         private System.Windows.Forms.Button btnEditMoisture;
         private SymbolFactoryDotNet.StandardControl pipe2;
         private SymbolFactoryDotNet.StandardControl pipe1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label30;
     }
 }

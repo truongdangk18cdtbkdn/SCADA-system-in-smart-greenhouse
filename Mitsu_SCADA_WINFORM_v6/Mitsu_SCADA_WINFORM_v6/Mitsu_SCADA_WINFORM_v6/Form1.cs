@@ -32,7 +32,7 @@ namespace Mitsu_SCADA_WINFORM_v6
         classStatusDisplay statusDisplay = new classStatusDisplay();
         class_Login fnLogin = new class_Login();
         //==========================KEPServerEX CONNECT=====================
-        static int tagNumber = 42;      // Cài đặt số lượng tag của project
+        static int tagNumber = 45;      // Cài đặt số lượng tag của project
         static int PLCscantime = 500;  // Cài đặt thời gian quét PLC
         // Gọi các kết nối OPC
         public OPCAutomation.OPCServer AnOPCServer;
@@ -106,13 +106,16 @@ namespace Mitsu_SCADA_WINFORM_v6
         private void btnHomePage_Click(object sender, EventArgs e)
         {
             mainPanel.Controls.Clear();
-            BackColor = Color.Red;
         }
-
-        private void btnLoginLogout_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            form_Login loginForm = new form_Login();
-            loginForm.Show();
+            mainPanel.Controls.Clear();
+            CSDL formCSDL = new CSDL();
+            formCSDL.TopLevel = false;
+            mainPanel.Controls.Add(formCSDL);
+            formCSDL.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            formCSDL.Dock = DockStyle.Fill;
+            formCSDL.Show();
         }
 
         private void btnDisconnect_Click(object sender, EventArgs e)
@@ -125,5 +128,10 @@ namespace Mitsu_SCADA_WINFORM_v6
             KEPServerEX_Connect();
         }
 
+        private void btnLoginLogout_Click_1(object sender, EventArgs e)
+        {
+            form_Login loginForm = new form_Login();
+            loginForm.Show();
+        }
     }
 }

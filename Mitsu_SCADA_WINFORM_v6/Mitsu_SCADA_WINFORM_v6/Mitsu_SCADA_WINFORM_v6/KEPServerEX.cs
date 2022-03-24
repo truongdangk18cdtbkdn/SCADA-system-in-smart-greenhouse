@@ -57,6 +57,9 @@ namespace Mitsu_SCADA_WINFORM_v6
             string tagID_40 = "Channel1.Device1.statusHeater";
             string tagID_41 = "Channel1.Device1.statusLamp";
             string tagID_42 = "Channel1.Device1.Watchdog";
+            string tagID_43 = "Channel1.Device1.ReportTrigger";
+            string tagID_44 = "Channel1.Device1.actualTDS";
+            string tagID_45 = "Channel1.Device1.temp1";
 
             string[] tags;
             tags = new string[tagnumber];
@@ -102,6 +105,9 @@ namespace Mitsu_SCADA_WINFORM_v6
             tags.SetValue(tagID_40, 40);
             tags.SetValue(tagID_41, 41);
             tags.SetValue(tagID_42, 42);
+            tags.SetValue(tagID_43, 43);
+            tags.SetValue(tagID_44, 44);
+            tags.SetValue(tagID_45, 45);
             return tags;
         }
         // Class tạo array đọc ID tags

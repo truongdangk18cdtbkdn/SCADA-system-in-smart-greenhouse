@@ -29,7 +29,7 @@ namespace Mitsu_SCADA_WINFORM_v6
         classStatusDisplay statusDisplay = new classStatusDisplay();
         class_Login fnLogin = new class_Login();
         //==========================KEPServerEX CONNECT=====================
-        static int tagNumber = 42;      // Cài đặt số lượng tag của project
+        static int tagNumber = 45;      // Cài đặt số lượng tag của project
         static int PLCscantime = 500;  // Cài đặt thời gian quét PLC
         // Gọi các kết nối OPC
         public OPCAutomation.OPCServer AnOPCServer;
@@ -140,11 +140,25 @@ namespace Mitsu_SCADA_WINFORM_v6
                     statusDisplay.sttTwoStatus(symLight2, tagValue);
                 }
                 //label
-                if (getTagID == 28) { labSetTemperature.Text = tagValue; }
-                if (getTagID == 29) { labSetMoisture.Text = tagValue; }
+                if (getTagID == 28)
+                {
+                    labSetTemperature.Text = tagValue;
+                    tbxTemperature.Text = tagValue;
+                }
+                if (getTagID == 29)
+                {
+                    labSetMoisture.Text = tagValue;
+                    tbxMoisture.Text = tagValue;
+                }
                 // textbox
-                if (getTagID == 30) { tbxTemperature.Text = tagValue; }
-                if (getTagID == 31) { tbxMoisture.Text = tagValue; }
+ /*               if (getTagID == 30)
+                {
+                    tbxTemperature.Text = tagValue;
+                }
+                if (getTagID == 31)
+                {
+                    tbxMoisture.Text = tagValue;
+                }*/
             }
         }
         //==============GHI DỮ LIỆU VÀO CÁC TAG===================
@@ -180,5 +194,36 @@ namespace Mitsu_SCADA_WINFORM_v6
         {
 
         }
+        // Nút nhấn sửa Giá trị Cài đặt Nhiệt độ
+        private void btnEditTemp_Click(object sender, EventArgs e)
+        {
+            tbxSetTemperature.Enabled = true;
+            btnSaveTemp.Enabled = true;
+        }
+
+        private void btnSaveTemp_Click(object sender, EventArgs e)
+        {
+            WriteItems.SetValue(tbxSetTemperature.Text, 28);
+            PLC.SyncWrite(tagNumber, ref tagHandles, ref WriteItems, out OPCError);
+            tbxSetTemperature.Enabled = false;
+            btnSaveTemp.Enabled = false;
+            MessageBox.Show("Đã cài đặt nhiệt độ của NHÀ KÍNH [1]");
+        }
+
+        private void btnEditMoisture_Click(object sender, EventArgs e)
+        {
+            tbxSetMoisture.Enabled = true;
+            btnSaveMoisture.Enabled = true;
+        }
+
+        private void btnSaveMoisture_Click(object sender, EventArgs e)
+        {
+            WriteItems.SetValue(tbxSetMoisture.Text, 29);
+            PLC.SyncWrite(tagNumber, ref tagHandles, ref WriteItems, out OPCError);
+            tbxSetMoisture.Enabled = false;
+            btnSaveMoisture.Enabled = false;
+            MessageBox.Show("Đã cài đặt độ ẩm đất của NHÀ KÍNH [1]");
+        }
+
     }
 }

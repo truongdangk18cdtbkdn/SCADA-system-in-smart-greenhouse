@@ -1,7 +1,6 @@
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\bin\Debug\Mitsu_SCADA_WINFORM_v6.exe.config
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\bin\Debug\Mitsu_SCADA_WINFORM_v6.exe
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\bin\Debug\Mitsu_SCADA_WINFORM_v6.pdb
-D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.csprojAssemblyReference.cache
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.Form1.resources
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.Properties.Resources.resources
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.csproj.GenerateResource.cache
@@ -17,3 +16,4 @@ D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenh
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.csproj.CopyComplete
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.form_Login.resources
 D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.formVentilationPopup.resources
+D:\TL-nam-4-ky-2\DA-HT-CDT\SCADA_WINFORM_PROJECT\Mitsubishi_SCADA_WINFORM_greenhouse\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\Mitsu_SCADA_WINFORM_v6\obj\Debug\Mitsu_SCADA_WINFORM_v6.CSDL.resources

@@ -16,6 +16,7 @@ namespace Mitsu_SCADA_WINFORM_v6
             // Các object cần Enable/Disable
             frm.btnGreenhouse1.Enabled = false;
             frm.btnGreenhouse2.Enabled = false;
+            frm.btnData.Enabled = false;
         }
         // Đăng nhập bằng quyền Admin
         public void adminControlElements()
@@ -24,6 +25,7 @@ namespace Mitsu_SCADA_WINFORM_v6
             // Các object cần Enable/Disable
             frm.btnGreenhouse1.Enabled = true;
             frm.btnGreenhouse2.Enabled = true;
+            frm.btnData.Enabled = true;
         }
         public void operatorControlElements()
         {
@@ -31,6 +33,7 @@ namespace Mitsu_SCADA_WINFORM_v6
             // Các object cần Enable/Disable
             frm.btnGreenhouse1.Enabled = false;
             frm.btnGreenhouse2.Enabled = false;
+            frm.btnData.Enabled = false;
         }
     }
 }

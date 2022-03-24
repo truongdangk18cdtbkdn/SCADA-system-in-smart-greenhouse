@@ -20,7 +20,19 @@ namespace Mitsu_SCADA_WINFORM_v6
 
         private void form_Login_Load(object sender, EventArgs e)
         {
-
+            Form1 frm = (Form1)Application.OpenForms["Form1"];
+            if (frm.btnGreenhouse1.Enabled == true)
+            {
+                btnLogin.Enabled = false;
+                tbxUsername.Enabled = false;
+                tbxPassword.Enabled = false;
+            }
+            else
+            {
+                btnLogin.Enabled = true;
+                tbxUsername.Enabled = true;
+                tbxPassword.Enabled = true;
+            }
         }
         // Khai báo tên người dùng
         string user1_Name = "admin";        // Tên người dùng 1
@@ -32,12 +44,12 @@ namespace Mitsu_SCADA_WINFORM_v6
         private void btnLogin_Click(object sender, EventArgs e)
         {
             // Đăng nhập bằng Admin
-            if (txt_Username.Text == user1_Name & txt_Password.Text == user1_Password)
+            if (tbxUsername.Text == user1_Name & tbxPassword.Text == user1_Password)
             {
                 fn_login.adminControlElements();
                 this.Close(); // Close form đăng nhập
             }
-            else if (txt_Username.Text == user2_Name & txt_Password.Text == user2_Password)
+            else if (tbxUsername.Text == user2_Name & tbxPassword.Text == user2_Password)
             {
                 fn_login.operatorControlElements();
                 this.Close(); // Close form đăng nhập
@@ -50,6 +62,9 @@ namespace Mitsu_SCADA_WINFORM_v6
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            btnLogin.Enabled = true;
+            tbxUsername.Enabled = true;
+            tbxPassword.Enabled = true;
             fn_login.Not_Login(); // Gọi chương trình con login
         }
     }

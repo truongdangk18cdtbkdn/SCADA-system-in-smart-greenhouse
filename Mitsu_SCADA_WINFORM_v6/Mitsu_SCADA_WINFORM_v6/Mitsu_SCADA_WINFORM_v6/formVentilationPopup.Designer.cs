@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnVentilationOpen = new System.Windows.Forms.Button();
             this.btnVentilationClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,17 +43,6 @@
             this.label1.Size = new System.Drawing.Size(208, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Turn On / Turn Off";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(42, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ventilation Fan";
             // 
             // btnVentilationOpen
             // 
@@ -87,7 +75,6 @@
             this.ClientSize = new System.Drawing.Size(225, 247);
             this.Controls.Add(this.btnVentilationClose);
             this.Controls.Add(this.btnVentilationOpen);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -102,7 +89,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnVentilationOpen;
         private System.Windows.Forms.Button btnVentilationClose;
     }
